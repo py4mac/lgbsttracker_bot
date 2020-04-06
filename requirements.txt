@@ -1,0 +1,6 @@
+rasa[spacy]>=1.7.0
+rasa-sdk>=1.7.0
+pytest
+mypy
+flake8
+black

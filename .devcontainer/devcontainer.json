@@ -1,0 +1,20 @@
+{
+  "dockerFile": "Dockerfile.dev",
+  "postCreateCommand": "pip install -r requirements.txt",
+  "settings": {
+    "terminal.integrated.shell.linux": "/bin/bash",
+    "python.pythonPath": "/workspaces/lgbsttracker-bot/.venv/bin/python3"
+  },
+  "runArgs": [
+    "--env-file",
+    ".devcontainer/devcontainer.env"
+  ],
+  "extensions": [
+    "ms-vcode.python",
+    "ms-python.python"
+  ],
+  "appPort": [
+    "5005:5005",
+    "5002:5002"
+  ]
+}
