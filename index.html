@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Lgbsttracker Chatbot</title>
+</head>
+<div id="webchat" />
+
+<body>
+    <script src="https://storage.googleapis.com/mrbot-cdn/webchat-0.5.8.js"></script>
+    <script>
+        WebChat.default.init({
+            selector: "#webchat",
+            interval: 1000,
+            customData: { "userId": "123" }, // arbitrary custom data. Stay minimal as this will be added to the socket
+            socketUrl: "http://localhost:5005",
+            socketPath: "/socket.io/",
+            title: "Lgbsttracker",
+            subtitle: "API Assistant",
+            profileAvatar: "https://rasa.com/assets/img/demo/rasa_avatar.png",
+        })
+    </script>
+</body>
+
+</html>

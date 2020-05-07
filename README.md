@@ -43,11 +43,27 @@ Run an instance of duckling on port 8001
 docker run -p 8001:8000 rasa/duckling
 ```
 
-To chat with the bot on the command line, run
+Start Action server, running
 ```
 rasa run actions
+```
+
+Two options avaiblable:
+
+### Command Line
+```
 rasa shell
 ```
+
+### Websocket
+```
+rasa run -m models --enable-api --cors "*" --debug
+```
+Open file [index.html](./index.html)
+
+And you should see something like:
+
+![](./docs/bot-test.png)
 
 ## Example dialog flow
 
