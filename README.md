@@ -24,6 +24,11 @@
 
 Python 3.6+
 
+## Environment variables
+
+| Variable Name |  Description | Default value |
+| --- | --- | --- |
+| LGBSTTRACKER_API_URI | Lgbsttracker API URI | Mandatory: to be set by the user before using library |
 
 ## How to use it?
 
@@ -44,11 +49,23 @@ rasa run actions
 rasa shell
 ```
 
-## Environment variables
+## Example dialog flow
 
-| Variable Name |  Description | Default value |
-| --- | --- | --- |
-| LGBSTTRACKER_API_URI | Lgbsttracker API URI | Mandatory: to be set by the user before using library |
+```
+Your input ->  Hi                                                                                  
+Hello! I am API search assistant! How can I help?
+Your input ->  Can I get table values                                                              
+what table?
+Your input ->  experiments                                                                         
+how many entries?
+Your input ->  2                                                                                   
+/usr/local/lib/python3.7/site-packages/rasa/utils/common.py:351: UserWarning: Interpreter parsed an entity 'number' which is not defined in the domain. Please make sure all entities are listed in the domain.
+  More info at https://rasa.com/docs/rasa/core/domains/
+{'experiment_uuid': 'experiment1', 'ts': '2020-04-01T16:53:09.444218', 'action': 'none', 'vision_sensor': None, 'speed': None, 'state': 'stopped', 'id': 1}
+I've made a request using the following parameters:
+ - table: experiments
+ - num_entries: 2
+```
 
 ## Credits
 

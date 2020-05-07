@@ -33,7 +33,7 @@
 - can i get [experiments](table) values
 - can i get last [two](num_entries:2) of [experiments](table) values
 
-## intent:affirm
+<!-- ## intent:affirm
 - correct
 - ye
 - uh yes
@@ -61,6 +61,7 @@
 - breath no
 - do you have something else
 - no this does not work for me
+ -->
 
 ## intent:inform
 - [experiments](table) values
@@ -93,7 +94,7 @@
 - uh okay thank you good bye
 - thank you bye
 - um okay thank you good bye
-
+<!-- 
 ## intent:chitchat
 - can you share your boss with me?
 - i want to get to know your owner
@@ -158,4 +159,4 @@
 - are you a bot?
 - are you a human?
 - am I talking to a bot?
-- am I talking to a human?
+- am I talking to a human? -->

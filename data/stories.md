@@ -1,4 +1,4 @@
-## happy path
+## default path
 * greet
     - utter_greet
 * request_api
@@ -9,7 +9,7 @@
 * thankyou
     - utter_noworries
 
-## unhappy path
+<!-- ## unhappy path
 * greet
     - utter_greet
 * request_api
@@ -142,4 +142,4 @@
 
 ## bot challenge
 * bot_challenge
-  - utter_iamabot
+  - utter_iamabot -->
